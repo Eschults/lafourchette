@@ -1,0 +1,13 @@
+<form action="/about" method="get">
+  <input type="text" name="category">
+  <input type="submit">
+</form>
+
+<%= link_to "Contactez-nous", contact_path %>
+
+<% restaurants = %w(Alicheur Esprit\ Tchai Mamma\ Roma) %>
+
+
+<% restaurants.each do |restaurant| %>
+  <p><%= restaurant %></p>
+<% end %>
