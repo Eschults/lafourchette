@@ -5,9 +5,6 @@
 
 <%= link_to "Contactez-nous", contact_path %>
 
-<% restaurants = %w(Alicheur Esprit\ Tchai Mamma\ Roma) %>
-
-
-<% restaurants.each do |restaurant| %>
+<% @restaurants.each do |restaurant| %>
   <p><%= restaurant %></p>
 <% end %>

@@ -4,10 +4,10 @@ class PagesController < ApplicationController
   end
 
   def about
-    raise
     @category = params[:category]
   end
 
   def home
+    @restaurants = %w(Alicheur Esprit\ Tchai Mamma\ Roma)
   end
 end
